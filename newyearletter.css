@@ -128,13 +128,13 @@ span.text {
 .heading2 {
     text-align: center;
     margin-bottom: 4em;
-    color: #ffffff;
+    color: #3516fd;
     font-size: 1.8em;
 }
 
 .heading h3 {
     font-size: 1.6em;
-    color: #dadada;
+    color: #7737d7;
     letter-spacing: 0.05em;
     font-weight: 600;
     background-color: var(--color-glass);
@@ -150,7 +150,7 @@ span.text {
     text-shadow: var(--color-shadow);
     font-size: 1.5em;
     font-weight: 800;
-    color: #dadada;
+    color: #6b5aca;
     letter-spacing: 0.15em;
 }
 
