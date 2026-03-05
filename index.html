@@ -14,8 +14,8 @@
 <body>
     <div class="layout_out_side">
         <div class="heading">
-            <h3 id="title">Đếm ngày xa Em</h3>
-            <h1>Tạm biệt Khánh Huhuhu</h1>
+            <h3 id="title">Đếm ngày Khánh về</h3>
+            <h1>Chờ đợi là hạnh phúc...</h1>
         </div>
 
         <div class="countdown">
@@ -41,8 +41,8 @@
     <div class="letter" onclick="display_letter()" id="note2">
         <div class="page increment " id="base" id="myinsp">
             <div class="arrow-down"></div>
-            <div class="bottom_from">By Khánh</div>
-            <div id="hny">Nhậu đê nhậu đê</div>
+            <div class="bottom_from">Gửi Khánh</div>
+            <div id="hny">Mau về nhé!</div>
         </div>
     </div>
 
@@ -58,10 +58,9 @@
     </script>
 
     <script>
-        // Đặt ngày đếm ngược, ở đây mình đặt ngày đếm ngược là 01/01/2024
-        //February: Tháng hai, 01: Ngày, 2022: Năm, 00:00:00 or 24:00:00 thời gian của ngày đếm ngược
-        var countDownDate = new Date("December 30, 2025 17:00:00").getTime();
-        //var countDownDate = new Date("February 01, 2021 00:00:00").getTime();
+        // Đặt ngày đếm ngược, ở đây mình đặt ngày đếm ngược là 04/03/2028
+        //March: Tháng ba, 04: Ngày, 2028: Năm, 00:00:00
+        var countDownDate = new Date("March 04, 2028 00:00:00").getTime();
         // setInterval: Cập nhật đếm ngược sau mỗi 1 giây.
         // 1000: 1 giây
         //sau khi cập nhật trên git
@@ -87,11 +86,15 @@
             // Nếu kết thúc quá trình đếm ngược thì in ra thông báo gì đó
             if (distance < 0) {
                 clearInterval(x);
-                document.getElementById("title").innerHTML = "Thời gian chính thức kết thúc, Thế Anh tạm biệt và hẹn gặp lại.";
-                document.getElementById("title2").style.display = 'none';
-                document.getElementById("note").style.display = 'block';
-                document.getElementById("imgVini").style.display = 'block';
-                document.getElementById("note2").style.display = 'block';
+                document.getElementById("title").innerHTML = "Khánh đã về! Chào mừng trở lại!";
+                var title2 = document.getElementById("title2");
+                if (title2) title2.style.display = 'none';
+                var note = document.getElementById("note");
+                if (note) note.style.display = 'block';
+                var imgVini = document.getElementById("imgVini");
+                if (imgVini) imgVini.style.display = 'block';
+                var note2 = document.getElementById("note2");
+                if (note2) note2.style.display = 'block';
                 document.getElementById("days").innerText = 0,
                     document.getElementById("hours").innerText = 0,
                     document.getElementById("minutes").innerText = 0,
